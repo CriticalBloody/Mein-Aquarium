@@ -42,6 +42,10 @@
 - [ ] Cloud-Backup & Sync
 - [ ] Mehrsprachigkeit
 
+## Lizenz
+
+Apache License, Version 2.0 – siehe LICENSE-Datei.
+
 ---
 
 **Viel Spaß beim Testen & danke für Feedback!**  
