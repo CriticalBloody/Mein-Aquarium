@@ -29,9 +29,33 @@
 		464A8F602E0D30D400BFB1D0 /* Mein AquariumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mein AquariumUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		464A8F7D2E0D326000BFB1D0 /* Exceptions for "Mein Aquarium" folder in "Mein Aquarium" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Pflanzen/PflanzenView.swift,
+			);
+			target = 464A8F462E0D30D300BFB1D0 /* Mein Aquarium */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		464A8F802E0D326B00BFB1D0 /* Exceptions for "Mein Aquarium" folder in "Copy Bundle Resources" phase from "Mein Aquarium" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 464A8F452E0D30D300BFB1D0 /* Resources */;
+			membershipExceptions = (
+				Pflanzen/PflanzenView.swift,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		464A8F492E0D30D300BFB1D0 /* Mein Aquarium */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				464A8F7D2E0D326000BFB1D0 /* Exceptions for "Mein Aquarium" folder in "Mein Aquarium" target */,
+				464A8F802E0D326B00BFB1D0 /* Exceptions for "Mein Aquarium" folder in "Copy Bundle Resources" phase from "Mein Aquarium" target */,
+			);
 			path = "Mein Aquarium";
 			sourceTree = "<group>";
 		};

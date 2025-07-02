@@ -12,7 +12,7 @@ import SwiftData
 struct Mein_AquariumApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            Aquarium.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
@@ -22,11 +22,14 @@ struct Mein_AquariumApp: App {
             fatalError("Could not create ModelContainer: \(error)")
         }
     }()
+    
+    @StateObject var globalRanges = GlobalParameterRanges()
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(globalRanges)
         }
-        .modelContainer(sharedModelContainer)
+        .modelContainer(for: [Aquarium.self, WaterParameter.self])
+        .environmentObject(globalRanges)
     }
 }
